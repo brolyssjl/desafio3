@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+#fondo {
+  background-image: url('fondo_destacado.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 568px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#fondo:hover {
+  border: 5px solid blue;
+}
+#fondo:hover .texto {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.texto {
+  width: 205px;
+  height: 205px;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: 1s ease-in;
+}
